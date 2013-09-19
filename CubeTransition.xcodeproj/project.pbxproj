@@ -22,6 +22,8 @@
 		2978B9B017EA79A300EE0924 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2978B98F17EA79A300EE0924 /* UIKit.framework */; };
 		2978B9B817EA79A300EE0924 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2978B9B617EA79A300EE0924 /* InfoPlist.strings */; };
 		2978B9BA17EA79A300EE0924 /* CubeTransitionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2978B9B917EA79A300EE0924 /* CubeTransitionTests.m */; };
+		2978B9C517EA79CA00EE0924 /* CHCubeTransitionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2978B9C417EA79CA00EE0924 /* CHCubeTransitionView.m */; };
+		2978B9C817EA7A5A00EE0924 /* CHDynamicItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2978B9C717EA7A5A00EE0924 /* CHDynamicItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,10 @@
 		2978B9B517EA79A300EE0924 /* CubeTransitionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CubeTransitionTests-Info.plist"; sourceTree = "<group>"; };
 		2978B9B717EA79A300EE0924 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2978B9B917EA79A300EE0924 /* CubeTransitionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CubeTransitionTests.m; sourceTree = "<group>"; };
+		2978B9C317EA79CA00EE0924 /* CHCubeTransitionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCubeTransitionView.h; sourceTree = "<group>"; };
+		2978B9C417EA79CA00EE0924 /* CHCubeTransitionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCubeTransitionView.m; sourceTree = "<group>"; };
+		2978B9C617EA7A5A00EE0924 /* CHDynamicItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHDynamicItem.h; sourceTree = "<group>"; };
+		2978B9C717EA7A5A00EE0924 /* CHDynamicItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHDynamicItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +120,7 @@
 		2978B99117EA79A300EE0924 /* CubeTransition */ = {
 			isa = PBXGroup;
 			children = (
+				2978B9C917EA7A6300EE0924 /* TransitionHandler */,
 				2978B99A17EA79A300EE0924 /* AppDelegate.h */,
 				2978B99B17EA79A300EE0924 /* AppDelegate.m */,
 				2978B99D17EA79A300EE0924 /* Main_iPhone.storyboard */,
@@ -153,6 +160,17 @@
 				2978B9B617EA79A300EE0924 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2978B9C917EA7A6300EE0924 /* TransitionHandler */ = {
+			isa = PBXGroup;
+			children = (
+				2978B9C617EA7A5A00EE0924 /* CHDynamicItem.h */,
+				2978B9C717EA7A5A00EE0924 /* CHDynamicItem.m */,
+				2978B9C317EA79CA00EE0924 /* CHCubeTransitionView.h */,
+				2978B9C417EA79CA00EE0924 /* CHCubeTransitionView.m */,
+			);
+			name = TransitionHandler;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,7 +272,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2978B9A517EA79A300EE0924 /* ViewController.m in Sources */,
+				2978B9C517EA79CA00EE0924 /* CHCubeTransitionView.m in Sources */,
 				2978B99C17EA79A300EE0924 /* AppDelegate.m in Sources */,
+				2978B9C817EA7A5A00EE0924 /* CHDynamicItem.m in Sources */,
 				2978B99817EA79A300EE0924 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
